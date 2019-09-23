@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_30"
+        android:background="#27e1d4"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/bus_main_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dp_5"
+            android:text="王莽岭"
+            android:textColor="#fff"
+            android:textSize="@dimen/sp_15"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#c4bfbf"
+            android:orientation="vertical">
+
+            <com.example.hp.myapplication.imgview.MyImageView
+                android:id="@+id/im_fir_hcxf"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/wml" />
+
+        </LinearLayout>
+
+
+            <com.amap.api.maps.MapView
+                android:id="@+id/wml_map"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+
+            </com.amap.api.maps.MapView>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#d2cccc"
+        android:orientation="vertical">
+
+        <com.example.hp.myapplication.Textview.MyTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="景点介绍："
+            android:layout_marginTop="@dimen/dp_10"
+            android:textSize="@dimen/sp_20" />
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_10"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_5"
+                android:padding="@dimen/dp_5"
+                android:text="王莽岭风景区，位于山西省晋城市陵川县古郊乡境内，因西汉王莽赶刘秀到此地安营扎寨而得名。包括王莽岭、锡崖沟、昆山、刘秀城四个景系，由晋城市兰花集团2003年开始经营开发。总面积150多平方公里，最高海拔1700余米，最低处跌入河南省辉县市境内仅300米左右，是南太行的最高峰，风光秀 丽，景色诱人。这里的云海、日出、奇峰、松涛、挂壁公路、红岩大峡谷、立体瀑布，形成了八百里太行最著名的自然景观，素有 “清凉圣境”、“避暑天堂”“世外桃源”、“太行至尊”之美誉。毛泽东生前秘书、当代诗坛领袖李锐畅游景区后称赞道：“不登王莽岭，岂识太行山。天下奇峰 聚，何须五岳攀。”
+"
+                android:textColor="#f00"
+                android:textSize="@dimen/sp_14" />
+        </LinearLayout>
+</ScrollView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.3"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/wml_btn"
+            android:layout_width="@dimen/dp_200"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_shape"
+            android:padding="@dimen/dp_5"
+            android:text="点击订票"
+            android:textColor="#0621f1"
+            android:textSize="@dimen/sp_15"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+</LinearLayout>

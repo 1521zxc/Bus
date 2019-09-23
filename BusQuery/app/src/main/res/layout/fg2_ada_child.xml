@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fg2_child"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:textSize="@dimen/sp_15"
+    android:textColor="#000"
+    android:padding="5dp"
+    android:layout_marginLeft="30dp"
+    tools:text="线路长度(公里):34.0;
+起点站首末车时间:06:00-19:00(夏)06:30-18:00(冬);
+终点站首末车时间:06:00-19:00(夏)06:00-18:00(冬);
+发车间隔:15分钟;">
+</TextView>

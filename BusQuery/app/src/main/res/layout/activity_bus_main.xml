@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".BusMainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_30"
+        android:background="#27e1d4"
+
+        android:orientation="horizontal">
+        <com.example.hp.myapplication.Textview.MyTextView
+            android:id="@+id/bus_main_xinwen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="网页新闻"
+            android:layout_marginTop="@dimen/dp_8"
+            android:textSize="@dimen/sp_10"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/bus_main_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="晋城天气"
+            android:layout_centerInParent="true"
+            android:textColor="#fff"
+            android:textSize="@dimen/sp_15"
+            android:textStyle="bold" />
+
+        <com.example.hp.myapplication.Textview.MyTextView
+            android:id="@+id/bus_main_jy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="建议反馈"
+            android:layout_marginTop="@dimen/dp_8"
+            android:layout_alignParentRight="true"
+            android:textSize="@dimen/sp_10"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <com.example.hp.myapplication.viewpager.MyViewPager
+        android:id="@+id/busmain_viewpar"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"></com.example.hp.myapplication.viewpager.MyViewPager>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_60"
+        android:baselineAligned="false"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_50"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/im_busmain_first_function"
+                android:layout_width="@dimen/dp_25"
+                android:layout_height="@dimen/dp_25"
+                android:src="@drawable/ic_cloud_wea" />
+
+            <TextView
+                android:id="@+id/busmain_first_function"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="天气"
+                android:textColor="#0745ff"
+                android:textSize="@dimen/sp_12"
+                android:textStyle="italic" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_50"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/im_busmain_two_function"
+                android:layout_width="@dimen/dp_25"
+                android:layout_height="@dimen/dp_25"
+                android:src="@drawable/ic_search_black" />
+
+            <TextView
+                android:id="@+id/busmain_two_function"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="公交查询"
+                android:textColor="#000"
+                android:textSize="@dimen/sp_12"
+                android:textStyle="italic" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_50"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/im_busmain_three_function"
+                android:layout_width="@dimen/dp_25"
+                android:layout_height="@dimen/dp_25"
+                android:src="@drawable/ic_store_scenic_spot1" />
+
+            <TextView
+                android:id="@+id/busmain_three_function"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="景点推荐"
+                android:textColor="#000"
+                android:textSize="@dimen/sp_12"
+                android:textStyle="italic" />
+        </LinearLayout>
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="关      于"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:textSize="@dimen/dp_12"
+        android:id="@+id/main_gy"/>
+</LinearLayout>

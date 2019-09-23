@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000"
+    android:gravity="center"
+    android:id="@+id/lin_tgwf"
+    android:orientation="vertical">
+
+
+    <com.example.hp.myapplication.imgview.MyImageView
+        android:layout_width="@dimen/dp_300"
+        android:layout_height="@dimen/dp_300"
+        app:srcCompat="@drawable/tgwf"
+        />
+
+</LinearLayout>

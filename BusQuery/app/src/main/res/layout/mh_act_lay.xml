@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_30"
+        android:background="#27e1d4"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/bus_main_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="蟒河"
+            android:padding="@dimen/dp_5"
+            android:textColor="#fff"
+            android:textSize="@dimen/sp_15"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#c4bfbf"
+            android:orientation="vertical">
+
+            <com.example.hp.myapplication.imgview.MyImageView
+                android:id="@+id/im_fir_hcxf"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/mh" />
+
+        </LinearLayout>
+
+
+        <com.amap.api.maps.MapView
+            android:id="@+id/mh_map"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+
+        </com.amap.api.maps.MapView>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="#d2cccc"
+        android:layout_weight="1"
+        android:orientation="vertical">
+        <com.example.hp.myapplication.Textview.MyTextView
+            android:layout_width="wrap_content"
+            android:layout_marginTop="@dimen/dp_10"
+            android:layout_height="wrap_content"
+            android:text="景点介绍："
+            android:textSize="@dimen/sp_20" />
+      <ScrollView
+          android:layout_width="match_parent"
+          android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/dp_10"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_5"
+                android:padding="@dimen/dp_5"
+                android:text="蟒河，亦称漭河、莽河，黄河支流沁河的支流。发源于山西省晋城市阳城县南指住山麓花野岭，由北向南，流经晋城市阳城县、河南省济源市、孟州市，分为两支，再经温县、武陟县，在武陟县分别入黄河和沁河。 全长130公里（一说106公里）， 流域面积1328平方公里。山西境内水利效益较好，建设有引沁济蟒灌区。河南省境内历史上灾害较多，建国后采取流域综合治理措施，河流治理效果明显。山西阳城县源头区开发有风景区。
+"
+                android:textColor="#f00"
+                android:textSize="@dimen/sp_14" />
+        </LinearLayout>
+
+      </ScrollView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.3"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="@dimen/dp_200"
+            android:layout_height="wrap_content"
+            android:id="@+id/mh_btn"
+            android:text="点击订票"
+            android:textStyle="bold"
+            android:textColor="#0621f1"
+            android:textSize="@dimen/sp_15"
+            android:padding="@dimen/dp_5"
+            android:background="@drawable/btn_shape"
+            />
+
+    </LinearLayout>
+</LinearLayout>

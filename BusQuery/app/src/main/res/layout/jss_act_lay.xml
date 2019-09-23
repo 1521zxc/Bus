@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_30"
+        android:background="#27e1d4"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/bus_main_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="聚寿山"
+            android:padding="@dimen/dp_5"
+            android:textColor="#fff"
+            android:textSize="@dimen/sp_15"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#c4bfbf"
+            android:orientation="vertical">
+
+            <com.example.hp.myapplication.imgview.MyImageView
+                android:id="@+id/im_fir_hcxf"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/jss" />
+
+        </LinearLayout>
+
+
+        <com.amap.api.maps.MapView
+            android:id="@+id/jss_map"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+
+        </com.amap.api.maps.MapView>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="#d2cccc"
+        android:layout_weight="1"
+        android:orientation="vertical">
+        <com.example.hp.myapplication.Textview.MyTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="景点介绍："
+            android:layout_marginTop="@dimen/dp_10"
+            android:textSize="@dimen/sp_20" />
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_10"
+            android:orientation="vertical">
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_5"
+                android:padding="@dimen/dp_5"
+                android:text="聚寿山，座落于太行山南麓的泽州晋庙铺镇范谷坨村，其山以“藏风聚气、怡情养性、安身凝神”而得名。景区由宝积塔、舟山慈航、普陀别院、三义古庙、 千年古柏、七星伴月（揽月楼、北斗七星塔、月牙池组成）、园觉洞、罗汉洞、金鸡石、放生亭、养生水库和亭台楼阁等二十多个景点组成。 核心景区是一处典型的园林式建筑群落，精华部分为寿山书院和普陀别院。普陀别院占地1500平米，72尊泥塑观音化身像集中体现在一个大殿内，中间泥塑观音化身像，身高19.3米，堪称国内近代泥塑之最，海外亦无二例。"
+                android:textColor="#f00"
+                android:textSize="@dimen/sp_13" />
+        </LinearLayout>
+
+        </ScrollView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.3"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="@dimen/dp_200"
+            android:layout_height="wrap_content"
+            android:id="@+id/jss_btn"
+            android:text="点击订票"
+            android:textStyle="bold"
+            android:textColor="#0621f1"
+            android:textSize="@dimen/sp_15"
+            android:padding="@dimen/dp_5"
+            android:background="@drawable/btn_shape"
+            />
+
+    </LinearLayout>
+</LinearLayout>
